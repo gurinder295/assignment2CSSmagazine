@@ -1,105 +1,103 @@
-/* Normalize CSS */
-/* Road Well Travelled - Custom Magazine Layout CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styles */
 body {
-    font-family: 'Georgia', serif;
-    line-height: 1.8;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+/* Container Wrapper */
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.header {
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    color: #cc6600;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #cc6600;
-    padding-bottom: 5px;
+/* Section Label - Top Orange Label */
+.section-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #f57914;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 8px;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 5px;
+/* Flexbox Layout - Image Left, Content Right */
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.article-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* Left Side - Image Block */
+.left-image img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
-.subheader {
-    font-size: 20px;
-    font-style: italic;
-    color: #666;
-    margin-bottom: 15px;
+/* Right Side - Text Content */
+.article {
+  flex: 1;
+  max-width: 520px;
 }
 
-.article-text {
-    text-align: justify;
-    font-size: 18px;
-    color: #444;
-    padding: 10px 0;
+/* Heading Styles */
+.article h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 22px;
-    color: #cc6600;
-    margin-top: 20px;
+.article h2 {
+  font-size: 18px;
+  margin-top: 24px;
+  font-weight: bold;
 }
 
-blockquote {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px;
-    background: #f8f8f8;
-    border-left: 5px solid #333;
+/* Highlighted Name - Orange */
+.orange {
+  color: #f47e20;
+  font-weight: bold;
 }
 
-.footer {
-    text-align: center;
-    font-size: 14px;
-    color: #777;
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
+/* Paragraphs */
+.article p {
+  margin-bottom: 18px;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-    .article-title {
-        font-size: 24px;
-    }
-    .subheader {
-        font-size: 18px;
-    }
-    .article-text {
-        font-size: 16px;
-    }
+/* Drop Cap Effect on First Paragraph */
+.article p:first-of-type::first-letter {
+  float: left;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: bold;
+  padding-right: 8px;
 }
+
+/* Author Line */
+.credit {
+  text-align: right;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* Footer Page Number */
+footer.page-number {
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+footer.page-number small em {
+  font-style: normal;
+  font-weight: bold;
+}
+
