@@ -1,0 +1,105 @@
+/* Normalize CSS */
+/* Road Well Travelled - Custom Magazine Layout CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.header {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc6600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #cc6600;
+    padding-bottom: 5px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.article-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subheader {
+    font-size: 20px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.article-text {
+    text-align: justify;
+    font-size: 18px;
+    color: #444;
+    padding: 10px 0;
+}
+
+h3 {
+    font-size: 22px;
+    color: #cc6600;
+    margin-top: 20px;
+}
+
+blockquote {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: #f8f8f8;
+    border-left: 5px solid #333;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    .article-title {
+        font-size: 24px;
+    }
+    .subheader {
+        font-size: 18px;
+    }
+    .article-text {
+        font-size: 16px;
+    }
+}
